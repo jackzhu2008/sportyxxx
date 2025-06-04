@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>SportyXX | About</title>
+
+  <link rel="icon" type="image/png" href="../images/logo.png">
+
+  <style>
+    h2{
+         
+      color: rgb(162, 37, 230);
+            
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .centrato{
+      text-align: center;
+    }
+
+    /* Titolo + Logo sopra la barra */
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #1f1f1f;
+      color: white;
+    }
+
+    .header img {
+      width: 30px;
+      height: 30px;
+      margin-left: 10px;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2d2f36;
+      padding: 0 10px;
+    }
+
+    .navbar-left, .navbar-right {
+      display: flex;
+    }
+
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #575a63;
+    }
+
+    .navbar a.active {
+      background-color: #04aa6d;
+      color: white;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Titolo + Logo -->
+  <div class="header">
+    <h2>SportyXX</h2>
+    <img src="../images/logo.png" alt="Logo" width="50" height="50">
+  </div>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar-left">
+      <a href="Home.html"  onclick="setActive(this)">Home</a>
+      <a href="Campeggio.html" onclick="setActive(this)">Campeggio</a>
+      <a href="Boxe.html" onclick="setActive(this)">Boxe</a>
+      <a href="Pallavolo.html" onclick="setActive(this)">Pallavolo</a>
+      <a href="Ciclismo.html" onclick="setActive(this)">Ciclismo</a>
+    </div>
+    <div class="navbar-right">
+      <a href="About.html" class="active" onclick="setActive(this)">About</a>
+    </div>
+  </div>
+
+  <!-- JavaScript per gestire l'attivazione -->
+  <script>
+    function setActive(element) {
+      const links = document.querySelectorAll('.navbar a');
+      links.forEach(link => link.classList.remove('active'));
+      element.classList.add('active');
+    }
+
+  </script>
+
+<br>
+<strong><b><h2 class="centrato">CHI SIAMO?</h2></b></strong>
+<br>
+
+<h3 class="centrato" >Sportyxx è un’azienda italiana con sede a Trento, specializzata nella vendita di articoli sportivi di alta qualità, pensati per soddisfare le esigenze di atleti e appassionati di quattro discipline principali: pallavolo, ciclismo, boxe e campeggio. Fondata nel 2018 da un gruppo di sportivi con l'obiettivo di offrire prodotti affidabili e performanti, Sportyxx è cresciuta rapidamente, diventando un punto di riferimento sia online che sul territorio.
+
+</h3>
+<br>
+
+<center><img  src="../images/sede.png" alt="png"></center>
+
+<br>
+<br>
+
+<h3 class="centrato" >  Nel settore della pallavolo, Sportyxx propone palloni omologati per competizioni ufficiali, divise tecniche, ginocchiere ergonomiche e reti professionali. Per il ciclismo, l’azienda offre un’ampia gamma di biciclette da corsa, mountain bike, accessori come caschi aerodinamici, scarpe tecniche e componentistica di precisione. Gli amanti della boxe possono trovare guantoni in pelle, sacchi da allenamento, fasce protettive e abbigliamento tecnico sia per l’allenamento che per il ring. Infine, per chi ama la natura e l’avventura, Sportyxx dispone di tende ultraleggere, sacchi a pelo termici, zaini da trekking e fornelli da campo, tutti progettati per resistere anche alle condizioni più estreme.
+  
+  La sede centrale di Trento ospita anche uno showroom e un centro assistenza, dove i clienti possono toccare con mano i prodotti, ricevere consulenze personalizzate e partecipare a eventi sportivi organizzati regolarmente. Sportyxx combina passione per lo sport, innovazione e attenzione al cliente, diventando così una realtà in continua espansione nel panorama dello sport outdoor e indoor.</h3>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <footer><p style="margin: 20px; padding: 10px;">&copy;SportyXXcompany</p></footer>
+</body>
+
+</html>
