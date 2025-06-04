@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>SportyXX | Pallavolo</title>
+
+  <link rel="icon" type="image/png" href="../images/logo.png">
+
+  <style>
+    
+
+    h2{
+         
+      color: rgb(162, 37, 230);
+            
+    }
+
+    h4{
+      color: red;
+      text-align: center;
+    }
+
+    .centrato{
+      text-align: center;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Titolo + Logo sopra la barra */
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #1f1f1f;
+      color: white;
+    }
+
+    .header img {
+      width: 30px;
+      height: 30px;
+      margin-left: 10px;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2d2f36;
+      padding: 0 10px;
+    }
+
+    .navbar-left, .navbar-right {
+      display: flex;
+    }
+
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #575a63;
+    }
+
+    .navbar a.active {
+      background-color: #04aa6d;
+      color: white;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Titolo + Logo -->
+  <div class="header">
+    <h2>SportyXX</h2>
+    <img src="../images/logo.png" alt="Logo" width="50" height="50">
+  </div>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar-left">
+      <a href="Home.html"  onclick="setActive(this)">Home</a>
+      <a href="Campeggio.html" onclick="setActive(this)">Campeggio</a>
+      <a href="Boxe.html" onclick="setActive(this)">Boxe</a>
+      <a href="Pallavolo.html" class="active" onclick="setActive(this)">Pallavolo</a>
+      <a href="Ciclismo.html" onclick="setActive(this)">Ciclismo</a>
+    </div>
+    <div class="navbar-right">
+      <a href="About.html" onclick="setActive(this)">About</a>
+    </div>
+  </div>
+
+  <!-- JavaScript per gestire l'attivazione -->
+  <script>
+    function setActive(element) {
+      const links = document.querySelectorAll('.navbar a');
+      links.forEach(link => link.classList.remove('active'));
+      element.classList.add('active');
+    }
+
+  </script>
+
+<strong><h2 class="centrato">PALLAVOLO</h2></strong>
+<br>
+
+<h3 class="centrato">-- ATTREZZATURA GIOCATORE --</h3>
+
+<br>
+
+<h3 class="centrato">🏐PALLONI🏐</h3>
+
+<br>
+<center>
+<table border="1">
+
+  <tr>
+
+     <td>
+       <img src="../images/pallone1.jpg" alt="Descrizione" width="150" height="150">
+       <br>
+       <h4>€25.00</h4>
+     </td>
+
+     <td>
+      <img src="../images/pallone2.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€30.00</h4>
+    </td>
+
+    <td>
+      <img src="../images/pallone3.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€28.00</h4>
+    </td>
+    <td>
+      <img src="../images/pallone4.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€22.00</h4>
+    </td>
+    <td>
+      <img src="../images/pallone5.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€27.50</h4>
+    </td>
+    <td>
+      <img src="../images/pallone6.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€26.00</h4>
+    </td>
+    <td>
+      <img src="../images/pallone7.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€29.00</h4>
+    </td>
+    <td>
+      <img src="../images/pallone8.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€24.00</h4>
+    </td>
+    <td>
+      <img src="../images/pallone9.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€31.00</h4>
+    </td>
+    <td>
+      <img src="../images/pallone10.jpg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€23.50</h4>
+    </td>
+  </tr>
+
+</table>
+</center>
+<br>
+
+<h3 class="centrato">🦿GINOCCHIERE🦿</h3>
+<br>
+<center>
+<table border="1">
+
+  <tr>
+
+    <td>
+      <img src="../images/ginocchiere1.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€15.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/ginocchiere2.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€18.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/ginocchiere3.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€16.50</h4>
+    </td>
+    
+    <td>
+      <img src="../images/ginocchiere4.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€17.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/ginocchiere5.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€14.50</h4>
+    </td>
+    
+    <td>
+      <img src="../images/ginocchiere6.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€19.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/ginocchiere7.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€20.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/ginocchiere8.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€16.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/ginocchiere9.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€18.50</h4>
+    </td>
+    
+    <td>
+      <img src="../images/ginocchiere10.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€15.50</h4>
+    </td>
+ 
+  </tr>
+
+</table>
+</center>
+<br>
+
+<h3 class="centrato">👟SCARPE👟</h3>
+<br>
+<center>
+<table border="1">
+
+  <tr>
+
+    <td>
+      <img src="../images/scarpe1.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€60.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/scarpe2.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€65.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/scarpe3.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€62.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/scarpe4.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€58.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/scarpe5.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€63.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/scarpe6.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€59.50</h4>
+    </td>
+    
+    <td>
+      <img src="../images/scarpe7.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€67.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/scarpe8.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€61.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/scarpe9.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€66.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/scarpe10.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€64.00</h4>
+    </td>
+ 
+  </tr>
+
+</table>
+</center>
+<br>
+
+<h3 class="centrato">👕MAGLIE E PANTALOCINI👕</h3>
+<br>
+<center>
+<table border="1">
+
+  <tr>
+
+    <td>
+      <img src="../images/maglie1.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€35.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/maglie2.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€37.50</h4>
+    </td>
+    
+    <td>
+      <img src="../images/maglie3.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€36.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/maglie4.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€34.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/maglie5.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€38.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/maglie6.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€33.50</h4>
+    </td>
+    
+    <td>
+      <img src="../images/maglie7.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€39.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/maglie8.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€35.50</h4>
+    </td>
+    
+    <td>
+      <img src="../images/maglie9.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€36.50</h4>
+    </td>
+    
+    <td>
+      <img src="../images/maglie10.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€37.00</h4>
+    </td>
+ 
+  </tr>
+
+</table>
+</center>
+<br>
+
+<h3 class="centrato">🧦CALZE SPORTIVE🧦</h3>
+<br>
+<center>
+<table border="1">
+
+  <tr>
+
+    <td>
+      <img src="../images/calze1.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€8.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/calze2.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€7.50</h4>
+    </td>
+    
+    <td>
+      <img src="../images/calze3.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€8.50</h4>
+    </td>
+    
+    <td>
+      <img src="../images/calze4.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€7.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/calze5.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€7.80</h4>
+    </td>
+    
+    <td>
+      <img src="../images/calze6.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€8.20</h4>
+    </td>
+    
+    <td>
+      <img src="../images/calze7.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€7.90</h4>
+    </td>
+    
+    <td>
+      <img src="../images/calze8.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€8.10</h4>
+    </td>
+    
+    <td>
+      <img src="../images/calze9.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€7.60</h4>
+    </td>
+    
+    <td>
+      <img src="../images/calze10.jpeg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€7.70</h4>
+    </td>
+
+  </tr>
+
+</table>
+</center>
+<br>
+
+
+</table>
+</center>
+<br>
+<br>
+<br>
+<br>
+
+<footer><p style="margin: 20px; padding: 10px;">&copy;SportyXXcompany</p></footer>
+
+
+
+
+</body>
+</html>
