@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>SportyXX | Ciclismo & Boxe & Pallavolo & Campeggio</title>
+
+  <link rel="icon" type="image/png" href="../images/logo.png">
+
+  <style>
+    h2{
+         
+      color: rgb(162, 37, 230);
+            
+    }
+    .centrato{
+     
+     text-align: center;
+
+   }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Titolo + Logo sopra la barra */
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #1f1f1f;
+      color: white;
+    }
+
+    .header img {
+      width: 30px;
+      height: 30px;
+      margin-left: 10px;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2d2f36;
+      padding: 0 10px;
+    }
+
+    .navbar-left, .navbar-right {
+      display: flex;
+    }
+
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #575a63;
+    }
+
+    .navbar a.active {
+      background-color: #04aa6d;
+      color: white;
+    }
+
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Titolo + Logo -->
+  <div class="header">
+    <h2>SportyXX</h2>
+    <img src="../images/logo.png" alt="Logo" width="50" height="50">
+  </div>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar-left">
+      <a href="Home.html" class="active" onclick="setActive(this)">Home</a>
+      <a href="Campeggio.html" onclick="setActive(this)">Campeggio</a>
+      <a href="Boxe.html" onclick="setActive(this)">Boxe</a>
+      <a href="Pallavolo.html" onclick="setActive(this)">Pallavolo</a>
+      <a href="Ciclismo.html" onclick="setActive(this)">Ciclismo</a>
+    </div>
+    <div class="navbar-right">
+      <a href="About.html" onclick="setActive(this)">About</a>
+    </div>
+  </div>
+
+  <!-- JavaScript per gestire l'attivazione -->
+  <script>
+    function setActive(element) {
+      const links = document.querySelectorAll('.navbar a');
+      links.forEach(link => link.classList.remove('active'));
+      element.classList.add('active');
+    }
+
+  </script>
+  <br>
+  <h3 class="centrato">Cosa puoi trovare</h2>
+  <br>
+
+<div>
+<center>
+<img src="../images/ciclismo.png" alt="Descrizioni" width="300" height="300">
+<img src="../images/pallavolo.png" alt="Descrizioni" width="300" height="300">
+<img src="../images/boxe.png" alt="Descrizioni" width="300" height="300">
+<img src="../images/campeggio.png" alt="Descrizioni" width="300" height="300">
+</center>
+</div>
+<br>
+<p style="color:blue;margin: 20px; padding: 10px;">Gli sport del momento ></p>
+
+<table style="margin: 20px; padding: 10px;" border="1">
+
+<tr>
+
+<td>
+  <img src="../images/ciclismo1.jpeg" alt="descrizioni" width="200" height="200">
+  <br>
+  <a href="Ciclismo.html"><h4 class="centrato">CICLISMO</h4></a>
+</td>
+
+<td>
+  <img src="../images/maglie1.jpeg" alt="descrizioni" width="200" height="200">
+  <br>
+  <a href="Pallavolo.html"><h4 class="centrato">PALLAVOLO</h4></a>
+</td>
+
+<td>
+  <img src="../images/campeggio1.jpeg" alt="descrizioni" width="200" height="200">
+  <br>
+  <a href="Campeggio.html"><h4 class="centrato">CAMPEGGIO</h4></a>
+</td>
+
+<td>
+  <img src="../images/boxe1.jpeg" alt="descrizioni" width="200" height="200">
+  <br>
+  <a href="boxe.html"><h4 class="centrato">BOXE</h4></a>    
+</td>
+</tr>
+
+</table>
+<br>
+<br>
+<br>
+<br>
+
+<footer><p style="margin: 20px; padding: 10px;">&copy;SportyXXcompany</p></footer>
+</body>
+</html>
