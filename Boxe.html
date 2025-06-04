@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="it">
+ 
+<head>
+ 
+  <meta charset="UTF-8">
+<title>SportyXX | Boxe</title>
+ 
+  <link rel="icon" type="image/png" href="../images/logo.png">
+ 
+  <style>
+    h2{
+
+    color: rgb(162, 37, 230);
+
+    }
+ 
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+ 
+    /* Titolo + Logo sopra la barra */
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #1f1f1f;
+      color: white;
+    }
+ 
+    .header img {
+      width: 30px;
+      height: 30px;
+      margin-left: 10px;
+    }
+ 
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2d2f36;
+      padding: 0 10px;
+    }
+ 
+    .navbar-left, .navbar-right {
+      display: flex;
+    }
+ 
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+ 
+    .navbar a:hover {
+      background-color: #575a63;
+    }
+ 
+    .navbar a.active {
+      background-color: #04aa6d;
+      color: white;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000; /* Sfondo nero */
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    .accessori {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .prodotto {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(255,255,255,0.2);
+      width: 300px;
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .prodotto:hover {
+      transform: scale(1.05);
+    }
+    .prodotto img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .prodotto h3 {
+      color: #ff6b6b;
+      margin: 10px 0 5px 0;
+    }
+    .prodotto p {
+      color: #555;
+      margin: 5px 0;
+    }
+    .prezzo {
+      color: #06d6a0;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+ 
+  </style>
+ 
+</head>
+ 
+<body>
+ 
+  <!-- Titolo + Logo -->
+<div class="header">
+<h2>SportyXX</h2>
+<img src="../images/logo.png" alt="Logo" width="50" height="50">
+</div>
+ 
+  <!-- Navbar -->
+<div class="navbar">
+<div class="navbar-left">
+<a href="Home.html" onclick="setActive(this)">Home</a>
+<a href="Campeggio.html" onclick="setActive(this)">Campeggio</a>
+<a href="Boxe.html" onclick="setActive(this)">Boxe</a>
+<a href="Pallavolo.html" onclick="setActive(this)">Pallavolo</a>
+<a href="Ciclismo.html" onclick="setActive(this)">Ciclismo</a>
+</div>
+<div class="navbar-right">
+<a href="About.html" onclick="setActive(this)">About</a>
+</div>
+</div>
+ 
+  <!-- JavaScript per gestire l'attivazione -->
+<script>
+    function setActive(element) {
+      const links = document.querySelectorAll('.navbar a');
+      links.forEach(link => link.classList.remove('active'));
+      element.classList.add('active');
+    }
+ 
+  </script>
+ <header>
+    <h1>🥊 Tutto per la Boxe 🥊</h1>
+    <p>Accessori, qualità e convenienza!</p>
+    </header>
+     
+    <main>
+    <section>
+    <h2 style="color: #4cc9f0;margin-bottom: 10px;text-align: center;">Accessori principali</h2>
+    <div class="accessori">
+     
+          <div class="prodotto">
+    <img src="../images/guantoni.jpg" alt="Guantoni Venum">
+    <h3>Guantoni Venum Elite</h3>
+    <p>Perfetti per allenamenti e sparring.</p>
+    <div class="prezzo">€89,99</div>
+    </div>
+     
+          <div class="prodotto">
+    <img src="../images/fasce box.jpg" alt="Fasce Leone 1947">
+    <h3>Fasce Leone 1947</h3>
+    <p>Protezione mani e polsi.</p>
+    <div class="prezzo">€14,90</div>
+    </div>
+     
+          <div class="prodotto">
+    <img src="../images/caschetto box.jpg" alt="Casco Adidas">
+    <h3>Casco Adidas Response</h3>
+    <p>Massima protezione per il viso.</p>
+    <div class="prezzo">€59,00</div>
+    </div>
+     
+        </div>
+    </section>
+     
+      <section>
+    <h2 style=" color: #4cc9f0;margin-bottom: 10px;text-align: center;">Accessori extra</h2>
+    <div class="accessori">
+     
+          <div class="prodotto">
+    <img src="../images/paradenti.jpg" alt="Paradenti Shock Doctor">
+    <h3>Paradenti Shock Doctor</h3>
+    <p>Comfort e protezione totale.</p>
+    <div class="prezzo">€19,99</div>
+    </div>
+     
+          <div class="prodotto">
+    <img src="../images/pantaloncini venum.jpg" alt="Pantaloncini Venum">
+    <h3>Pantaloncini Venum</h3>
+    <p>Leggeri e resistenti.</p>
+    <div class="prezzo">€39,99</div>
+    </div>
+     
+          <div class="prodotto">
+    <img src="../images/scarpe box.jpg" alt="Scarpe Nike Machomai">
+    <h3>Scarpe Nike Machom
+    <div class="prezzo">€69,99</div>
+    </div>
+ 
+    <footer><p style="margin: 20px; padding: 10px;">&copy;SportyXXcompany</p></footer>
+</body>
+ 
+ 
+
