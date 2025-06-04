@@ -1,0 +1,416 @@
+
+ 
+<!DOCTYPE html>
+<html lang="it">
+ 
+<head>
+  <meta charset="UTF-8">
+  <title>SportyXX | Campeggio</title>
+  <link rel="icon" type="image/png" href="../images/logo.png">
+  <style>
+    h2 {
+      color: rgb(162, 37, 230);
+    }
+
+    h4 {
+      color: red;
+      text-align: center;
+    }
+
+    .centrato {
+      text-align: center;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Titolo + Logo sopra la barra */
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #1f1f1f;
+      color: white;
+    }
+
+    .header img {
+      width: 30px;
+      height: 30px;
+      margin-left: 10px;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2d2f36;
+      padding: 0 10px;
+    }
+
+    .navbar-left, .navbar-right {
+      display: flex;
+    }
+
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #575a63;
+    }
+
+    .navbar a.active {
+      background-color: #04aa6d;
+      color: white;
+    }
+
+  </style>
+</head>
+ 
+<body>
+  <!-- Titolo + Logo -->
+  <div class="header">
+    <h2>SportyXX</h2>
+    <img src="../images/logo.png" alt="Logo" width="50" height="50">
+  </div>
+ 
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar-left">
+      <a href="Home.html" onclick="setActive(this)">Home</a>
+      <a href="Campeggio.html" class="active" onclick="setActive(this)">Campeggio</a>
+      <a href="Boxe.html" onclick="setActive(this)">Boxe</a>
+      <a href="Pallavolo.html" onclick="setActive(this)">Pallavolo</a>
+      <a href="Ciclismo.html" onclick="setActive(this)">Ciclismo</a>
+    </div>
+    <div class="navbar-right">
+      <a href="About.html" onclick="setActive(this)">About</a>
+    </div>
+  </div>
+  
+  <!-- JavaScript per gestire l'attivazione -->
+  <script>
+    function setActive(element) {
+      const links = document.querySelectorAll('.navbar a');
+      links.forEach(link => link.classList.remove('active'));
+      element.classList.add('active');
+    }
+  </script>
+
+  <strong><h2 class="centrato">CAMPEGGIO</h2></strong>
+
+  <br>
+
+  <h3 class="centrato">-- FORNITURE PER LA VITA IN NATURA --</h3>
+
+  <br>
+
+  <h3 class="centrato">⛺TENDE DA CAMPEGGIO⛺</h3>
+
+  <br>
+
+  <center>
+    <table border="1">
+      <tr>
+        <td>
+          <img src="../images/campeggio1.jpg" alt="Descrizione" width="150" height="150">
+          <br>
+          <h4>€150</h4>
+        </td>
+        <td>
+          <img src="../images/campeggio2.jpg" alt="Descrizione" width="150" height="150">
+          <br>
+          <h4>€120</h4>
+        </td>
+        <td>
+          <img src="../images/campeggio3.jpg" alt="Descrizione" width="150" height="150">
+          <br>
+          <h4>€180</h4>
+        </td>
+        <td>
+          <img src="../images/campeggio4.jpg" alt="Descrizione" width="150" height="150">
+          <br>
+          <h4>€140</h4>
+        </td>
+        <td>
+          <img src="../images/campeggio5.jpg" alt="Descrizione" width="150" height="150">
+          <br>
+          <h4>€200</h4>
+        </td>
+        <td>
+          <img src="../images/campeggio6.jpg" alt="Descrizione" width="150" height="150">
+          <br>
+          <h4>€100</h4>
+        </td>
+        <td>
+          <img src="../images/campeggio7.jpg" alt="Descrizione" width="150" height="150">
+          <br>
+          <h4>€130</h4>
+        </td>
+        <td>
+          <img src="../images/campeggio8.jpg" alt="Descrizione" width="150" height="150">
+          <br>
+          <h4>€160</h4>
+        </td>
+        <td>
+          <img src="../images/campeggio9.jpg" alt="Descrizione" width="150" height="150">
+          <br>
+          <h4>€170</h4>
+        </td>
+        <td>
+          <img src="../images/campeggio10.jpg" alt="Descrizione" width="100" height="150">
+          <br>
+          <h4>€110</h4>
+        </td>
+      </tr>
+    </table>
+    <br>
+
+    <h3 class="centrato">🛏️SACCO A PELO E MATERASSINI🛏️</h3>
+    <br>
+    <table border="1">
+      <tr>
+        <td>
+          <img src="../images/sacco1.jpg" alt="Descrizione" width="150" height="150">
+          <br>
+          <h4>€40</h4>
+        </td>
+        <td>
+          <img src="../images/sacco2.jpg" alt="Descrizione" width="150" height="150">
+          <br>
+          <h4>€50</h4>
+        </td>
+        <td>
+          <img src="../images/sacco3.jpg" alt="Descrizione" width="150" height="150">
+          <br>
+          <h4>€45</h4>
+        </td>
+        <td>
+          <img src="../images/sacco4.jpg" alt="Descrizione" width="150" height="150">
+          <br>
+          <h4>€60</h4>
+        </td>
+        <td>
+          <img src="../images/sacco5.jpg" alt="Descrizione" width="150" height="150">
+          <br>
+          <h4>€55</h4>
+        </td>
+        <td>
+          <img src="../images/sacco6.jpg" alt="Descrizione" width="150" height="150">
+          <br>
+          <h4>€50</h4>
+        </td>
+        <td>
+          <img src="../images/sacco7.jpg" alt="Descrizione" width="150" height="150">
+          <br>
+          <h4>€70</h4>
+        </td>
+        <td>
+          <img src="../images/sacco8.jpg" alt="Descrizione" width="150" height="150">
+          <br>
+          <h4>€45</h4>
+        </td>
+        <td>
+          <img src="../images/sacco9.jpg" alt="Descrizione" width="150" height="150">
+          <br>
+          <h4>€65</h4>
+        </td>
+        <td>
+          <img src="../images/sacco10.jpg" alt="Descrizione" width="100" height="150">
+          <br>
+          <h4>€60</h4>
+        </td>
+      </tr>
+    </table>
+    <br>
+
+    <h3 class="centrato">🧥ABIGLIAMENTI TECNICI🧥</h3>
+    <br>
+    <table border="1">
+      <tr>
+        <td>
+          <img src="../images/abigliamento1.jpg" alt="Descrizione" width="150" height="150">
+          <br>
+          <h4>€80</h4>
+        </td>
+        <td>
+          <img src="../images/abigliamento2.jpg" alt="Descrizione" width="150" height="150">
+          <br>
+          <h4>€90</h4>
+        </td>
+        <td>
+          <img src="../images/abigliamento3.jpg" alt="Descrizione" width="150" height="150">
+          <br>
+          <h4>€100</h4>
+        </td>
+        <td>
+          <img src="../images/abigliamento4.jpg" alt="Descrizione" width="150" height="150">
+          <br>
+          <h4>€110</h4>
+        </td>
+        <td>
+          <img src="../images/abigliamento5.jpg" alt="Descrizione" width="150" height="150">
+          <br>
+          <h4>€75</h4>
+        </td>
+        <td>
+          <img src="../images/abigliamento6.jpg" alt="Descrizione" width="150" height="150">
+          <br>
+          <h4>€85</h4>
+        </td>
+        <td>
+          <img src="../images/abigliamento7.jpg" alt="Descrizione" width="150" height="150">
+          <br>
+          <h4>€95</h4>
+        </td>
+        <td>
+          <img src="../images/abigliamento8.jpg" alt="Descrizione" width="150" height="150">
+          <br>
+          <h4>€120</h4>
+        </td>
+        <td>
+          <img src="../images/abigliamento9.jpg" alt="Descrizione" width="150" height="150">
+          <br>
+          <h4>€100</h4>
+        </td>
+        <td>
+          <img src="../images/abigliamento10.jpg" alt="Descrizione" width="100" height="150">
+          <br>
+          <h4>€80</h4>
+        </td>
+      </tr>
+    </table>
+  </center>
+</body>
+</html>
+<br>
+<center>
+<h3 class="centrato">🎒ZAINI TECNICI DA TREKKING🎒</h3>
+<br>
+<table border="1">
+  <tr>
+    <td>
+      <img src="../images/zaino1.jpg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€65</h4>
+    </td>
+    <td>
+      <img src="../images/zaino2.jpg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€75</h4>
+    </td>
+    <td>
+      <img src="../images/zaino3.jpg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€80</h4>
+    </td>
+    <td>
+      <img src="../images/zaino4.jpg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€90</h4>
+    </td>
+    <td>
+      <img src="../images/zaino5.jpg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€85</h4>
+    </td>
+    <td>
+      <img src="../images/zaino6.jpg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€95</h4>
+    </td>
+    <td>
+      <img src="../images/zaino7.jpg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€100</h4>
+    </td>
+    <td>
+      <img src="../images/zaino8.jpg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€110</h4>
+    </td>
+    <td>
+      <img src="../images/zaino9.jpg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€95</h4>
+    </td>
+    <td>
+      <img src="../images/zaino10.jpg" alt="Descrizione" width="100" height="150">
+      <br>
+      <h4>€85</h4>
+    </td>
+  </tr>
+</table>
+<br>
+<h3 class="centrato">👟SCARPONI DA TREKKING👟</h3>
+<br>
+<table border="1">
+  <tr>
+    <td>
+      <img src="../images/scarpe1.jpg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€120</h4>
+    </td>
+    <td>
+      <img src="../images/scarpe2.jpg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€130</h4>
+    </td>
+    <td>
+      <img src="../images/scarpe3.jpg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€140</h4>
+    </td>
+    <td>
+      <img src="../images/scarpe4.jpg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€135</h4>
+    </td>
+    <td>
+      <img src="../images/scarpe5.jpg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€125</h4>
+    </td>
+    <td>
+      <img src="../images/scarpe6.jpg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€150</h4>
+    </td>
+    <td>
+      <img src="../images/scarpe7.jpg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€145</h4>
+    </td>
+    <td>
+      <img src="../images/scarpe8.jpg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€155</h4>
+    </td>
+    <td>
+      <img src="../images/scarpe9.jpg" alt="Descrizione" width="150" height="150">
+      <br>
+      <h4>€140</h4>
+    </td>
+    <td>
+      <img src="../images/scarpe10.jpg" alt="Descrizione" width="100" height="150">
+      <br>
+      <h4>€130</h4>
+    </td>
+  </tr>
+</table>
+</center>
+</center>
+<br>
+<br>
+<br>
+<br>
+<footer><p style="margin: 20px; padding: 10px;">&copy;SportyXXcompany</p></footer>
+</body>
+</html>
