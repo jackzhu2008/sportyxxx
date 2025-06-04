@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>SportyXX | Ciclismo</title>
+
+  <link rel="icon" type="image/png" href="../images/logo.png">
+
+  <style>
+    h2{
+         
+      color: rgb(162, 37, 230);
+            
+    }
+
+    h4{
+      color: red;
+      text-align: center;
+    }
+
+    .centrato{
+      text-align: center;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Titolo + Logo sopra la barra */
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #1f1f1f;
+      color: white;
+    }
+
+    .header img {
+      width: 30px;
+      height: 30px;
+      margin-left: 10px;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2d2f36;
+      padding: 0 10px;
+    }
+
+    .navbar-left, .navbar-right {
+      display: flex;
+    }
+
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #575a63;
+    }
+
+    .navbar a.active {
+      background-color: #04aa6d;
+      color: white;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Titolo + Logo -->
+  <div class="header">
+    <h2>SportyXX</h2>
+    <img src="../images/logo.png" alt="Logo" width="50" height="50">
+  </div>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar-left">
+      <a href="Home.html"  onclick="setActive(this)">Home</a>
+      <a href="Campeggio.html" onclick="setActive(this)">Campeggio</a>
+      <a href="Boxe.html" onclick="setActive(this)">Boxe</a>
+      <a href="Pallavolo.html"  onclick="setActive(this)">Pallavolo</a>
+      <a href="Ciclismo.html" class="active" onclick="setActive(this)">Ciclismo</a>
+    </div>
+    <div class="navbar-right">
+      <a href="About.html" onclick="setActive(this)">About</a>
+    </div>
+  </div>
+
+  <!-- JavaScript per gestire l'attivazione -->
+  <script>
+    function setActive(element) {
+      const links = document.querySelectorAll('.navbar a');
+      links.forEach(link => link.classList.remove('active'));
+      element.classList.add('active');
+    }
+
+  </script>
+
+<strong><h2 class="centrato">CICLISMO</h2></strong>
+<br>
+
+<h3 class="centrato">-- ATTREZZATURA CICLISTA --</h3>
+
+<br>
+
+<h3 class="centrato">🚲BICICLETTE🚲</h3>
+
+<br>
+<center>
+<table border="1">
+
+  <tr>
+
+    <td>
+      <img src="../images/Bici1.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€450.00</h4>
+    </td>
+
+    <td>
+      <img src="../images/bici2.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€520.00</h4>
+    </td>
+
+    <td>
+      <img src="../images/bici3.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€480.00</h4>
+    </td>
+
+    <td>
+      <img src="../images/bici4.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€460.00</h4>
+    </td>
+
+    <td>
+      <img src="../images/bici5.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€495.00</h4>
+    </td>
+
+    <td>
+      <img src="../images/bici6.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€470.00</h4>
+    </td>
+
+    <td>
+      <img src="../images/bici7.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€510.00</h4>
+    </td>
+
+    <td>
+      <img src="../images/bici8.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€530.00</h4>
+    </td>
+
+    <td>
+      <img src="../images/bici9.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€475.00</h4>
+    </td>
+
+    <td>
+      <img src="../images/bici10.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€490.00</h4>
+    </td>
+
+  </tr>
+
+</table>
+<br>
+
+<h3 class="centrato">🛡CASCHI🛡</h3>
+<br>
+<table border="1">
+
+  <tr>
+
+    <td>
+      <img src="../images/casco1.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€60.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/casco2.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€65.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/casco3.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€62.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/casco4.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€58.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/casco5.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€63.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/casco6.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€59.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/casco7.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€64.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/casco8.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€61.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/casco9.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€60.50</h4>
+    </td>
+    
+    <td>
+      <img src="../images/casco10.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€62.50</h4>
+    </td>
+
+  </tr>
+
+</table>
+
+<br>
+
+<h3 class="centrato">🧤GUANTI🧤</h3>
+<br>
+<table border="1">
+
+  <tr>
+
+    <td>
+      <img src="../images/guanti1.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€25.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/guanti2.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€27.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/guanti3.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€26.50</h4>
+    </td>
+    
+    <td>
+      <img src="../images/guanti4.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€24.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/guanti5.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€25.50</h4>
+    </td>
+    
+    <td>
+      <img src="../images/guanti6.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€23.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/guanti7.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€28.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/guanti8.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€26.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/guanti9.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€24.50</h4>
+    </td>
+    
+    <td>
+      <img src=
+
+<h3 class="centrato">👕TUTE👕</h3>
+<br>
+<table border="1">
+
+  <tr>
+
+    <td>
+      <img src="../images/tutabici1.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€12.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/tutabici2.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€13.50</h4>
+    </td>
+    
+    <td>
+      <img src="../images/tutabici3.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€11.50</h4>
+    </td>
+    
+    <td>
+      <img src="../images/tutabici4.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€14.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/tutabici5.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€12.50</h4>
+    </td>
+    
+    <td>
+      <img src="../images/tutabici6.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€13.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/tutabici7.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€12.00</h4>
+    </td>
+    
+    <td>
+      <img src="../images/tutabici8.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€11.75</h4>
+    </td>
+    
+    <td>
+      <img src="../images/tutabici9.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€12.25</h4>
+    </td>
+    
+    <td>
+      <img src="../images/tutabici10.jpg" alt="Descrizione" width="auto" height="150">
+      <br>
+      <h4>€13.00</h4>
+    </td>
+
+  </tr>
+
+</table>
+<br>
+
+
+</center>
+
+<br>
+<br>
+<br>
+<br>
+
+<footer><p>&copy;SportyXXcompany</p></footer>
+
+
+
+
+</body>
+</html>
